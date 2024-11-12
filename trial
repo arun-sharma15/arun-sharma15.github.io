@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Setting text color */
+    p {
+      color: red; /* Named color */
+    }
+
+    /* Setting background color */
+    .highlight {
+      background-color: #00FF00; /* Hexadecimal color */
+    }
+  </style>
+</head>
+<body>
+  <p>This is a <span class="highlight">highlighted</span> text.</p>
+</body>
+</html>
