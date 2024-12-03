@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Contact Us - KM Ram Services T:mi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html" class="logo-txt"><img src="images/logo3.png" alt="Company logo KM Ram Services"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-navicon" onclick="showMenu()"></i>  
+        </nav>
+        <h1>Contact Us</h1> 
+    </section>
+
+<!-- Content for contact us -->
+<section class="location">
+    <h2>Head Office</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d710.4795300666455!2d24.819527770353012!3d60.23741484192434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d60.2374641061968!2d24.82123901967923!5e1!3m2!1sen!2sfi!4v1732801222017!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <h2>Contact details</h2>
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="material-icons">home</i>
+                <h5>Metsälinnunreitti<br>Lintuvaara, Espoo</h5>
+            </div>
+            <div>
+                <i class="material-icons">contact_phone</i>
+                    <h5>+358-45xxxxxxx<br>Monday to Friday<br>10AM to 5PM</h5>
+            </div>
+            <div>
+                <i class="material-icons">contact_mail</i>
+                    <h5>arun.sharma@student.xxx<br>Email us your query</h5>
+            </div>
+        </div>
+      <div class="contact-col">
+        <form action="formhandler.php" method="post">
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <input type="text" name="email" placeholder="Enter Email" required>
+            <input type="text" name="subject" placeholder="Enter subject" required>
+            <textarea rows="8" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="a1-btn a2-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+</section>
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are into warehouse industry for last more than 20 years.<br>Our team have experience in handling domestic as well as international customers.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>
